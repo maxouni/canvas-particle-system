@@ -1,8 +1,8 @@
 {
-  "name": "alma",
+  "name": "angularCanvasParticleSystem",
   "version": "0.0.1",
   "private": true,
-  "author": "Max <maxouni> Mishin <head@101studio.ru>",
+  "author": "Max 'maxouni' Mishin <maxm@design.ru>",
   "license": "MIT",
   "ignore": [
     "**/.*",
