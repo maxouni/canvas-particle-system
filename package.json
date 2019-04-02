@@ -1,13 +1,12 @@
 {
-  "name": "angularCanvasParticleSystem",
-  "version": "0.0.1",
+  "name": "canvas-particle-system",
+  "version": "0.0.2",
   "private": true,
   "ignore": [
     "**/.*",
-    "node_modules",
-    "bower_components"
+    "node_modules"
   ],
-  "author": "Max 'maxouni' Mishin <maxm@design.ru>",
+  "author": "Max 'maxouni' Mishin <max@mishin.io>",
   "license": "MIT",
   "devDependencies": {
     "bourbon": "^4.2.6",
@@ -23,9 +22,13 @@
     "gulp-uglify": "^2.0.0",
     "gulp.spritesmith": "~6.0.0",
     "merge-stream": "^1.0.0",
-    "vinyl-buffer": "^1.0.0"
+    "vinyl-buffer": "^1.0.0",
+    "gulp-sourcemaps": "^1.6.0"
   },
   "dependencies": {
-    "gulp-sourcemaps": "^1.6.0"
+    "angular": "^1.6.6",
+    "angular-animate": "^1.5.8",
+    "angular-sanitize": "^1.5.8",
+    "jquery": "^3.1.1"
   }
 }

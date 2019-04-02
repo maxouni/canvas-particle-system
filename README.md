@@ -2,9 +2,14 @@
 Simple canvas flying particle system 
 
 
-### Старт
-```
-npm install
-bower install
-gulp
-```
+### Development
+
+> npm install
+
+> gulp
+
+### Build
+
+> npm install
+
+> gulp build

@@ -55,7 +55,7 @@ var particle = function (canvasCtx, arColor, arType, canvasParam, index, imgs) {
 	 * Скорость движения
 	 * @type {number}
 	 */
-	this.speed = Math.random() * 0.1;
+	this.speed = Math.random() * 0.2;
 
 	/**
 	 * Ширина частицы (для прямоугольников)
@@ -144,18 +144,6 @@ particle.prototype._render = function () {
 	this.canvasCtx.drawImage(this._images[this.type], this.positionX, this.positionY, this.width, this.width);
 	this.canvasCtx.closePath();
 };
-
-//particle.prototype._render = function () {
-//	this.canvasCtx.beginPath();
-//	this.canvasCtx.fillStyle = this.color;
-//	this.canvasCtx.arc(this.positionX, this.positionY, this.radius, 0, Math.PI*2, true);
-//	this.canvasCtx.shadowColor = this.color;
-//	this.canvasCtx.shadowBlur = 10;
-//	this.canvasCtx.fill();
-//	this.canvasCtx.closePath();
-//};
-
-
 
 /**
  * Анимация "движения частиц в пространстве"
@@ -294,7 +282,7 @@ particle.prototype.animateShow = function () {
 /**
  * Фабрика обрабатывающая анимацию и хранящая объекты частиц
  */
-app.factory('particleCloud', function( $timeout, $rootScope, $window, $q, $log) {
+app.factory('particleCloud', function( $timeout, $rootScope, $window, $q) {
 
 		/**
 		 * Объект фабрики
@@ -358,7 +346,7 @@ app.factory('particleCloud', function( $timeout, $rootScope, $window, $q, $log) 
 			 * Общее количество частиц
 			 * @type {number}
 			 */
-			this.countParticles = 50;
+			this.countParticles = 200;
 
 			/**
 			 * Объект дял хранения объектов частиц
@@ -395,7 +383,6 @@ app.factory('particleCloud', function( $timeout, $rootScope, $window, $q, $log) 
 			 * Public methods
 			 */
 			init: function () {
-				$log.debug('instance particle factory');
 				/**
 				 * @type {ParticleCloud}
 				 */
