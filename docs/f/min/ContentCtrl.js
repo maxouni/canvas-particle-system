@@ -1,0 +1,1 @@
+app.controller("ContentCtrl",["$scope","$log","particleCloud",function(t,e,n){e.debug("instance: ContentCtrl"),new n(document.getElementById("wrap-for-particle")).startDraw()}]);
