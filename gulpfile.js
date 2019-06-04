@@ -54,8 +54,8 @@ gulp.task('build-js', function() {
 		'f/src/js/angular/controllers/*.js'
 	])
 	.pipe(uglify('build.min', {outSourceMap: true}))
-	// .pipe(ngmin())
-	// .pipe(concat('build.min.js'))
+	.pipe(ngmin())
+	.pipe(concat('build.min.js'))
 	.pipe(gulp.dest('docs/f/min'));
 });
 
